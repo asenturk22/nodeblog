@@ -51,3 +51,23 @@ $ nodemon app.js
 ```
 
 ile nodemon baslatilmaktadir. app.js dosyasinda yapilan degisiklikler kaydedildiginde nodemon bu degisiklikleri bildigi icin node.js server'i kapatik tekrardan bizim icin acacaktir. 
+
+
+### server'in express.js kullanilarak olusturulmasi
+
+[hello-world](https://expressjs.com/en/starter/hello-world.html)
+
+``` shell
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
+
+```
