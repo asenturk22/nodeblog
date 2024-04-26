@@ -85,3 +85,27 @@ app.use(express.static('public'))
 ```
 
 bu komutu girdikten sonra, projemizde public isminde klasor olusturuyoruz ve ardindna css klasoru icerisine style.css dosyasini ekliyoruz.  Projde ki dosya organizasyonu acisindan daha duzenli hale getiriliyor. 
+
+### express-handlebars  templates 
+
+```
+$ npm install express-handlebars
+```
+
+
+```
+import express from 'express';
+import { engine } from 'express-handlebars';
+
+const app = express();
+
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+app.set('views', './views');
+
+app.get('/', (req, res) => {
+    res.render('site2\index');
+});
+
+app.listen(3000);
+```
