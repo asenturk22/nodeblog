@@ -6,19 +6,17 @@ const hostname = "127.0.0.1"
 const port = 3000
 
 
-app.use(express.static("public")) 
+app.use(express.static("public"))   
+
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'index.html'))
+    res.sendFile(path.resolve(__dirname, "site/index.html"))
 })
 
 app.get('/about', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'about.html'))
+    res.sendFile(path.resolve(__dirname, "site/about.html"))
 })
 
-app.get('/contact', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'contact.html'))
-})
 
 app.listen(port, hostname,  () => {
     console.log(` Server calisiyor, http://${hostname}:${port}/`)
