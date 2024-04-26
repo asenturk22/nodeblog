@@ -71,3 +71,17 @@ app.listen(port, () => {
 })
 
 ```
+
+
+### Express te "static" dosyalarin sunulmasi
+
+- resim dosyalari, 
+- css dosyalari
+- javascript dosyalarinin  middleware  built-in fonksiyonlar aracaligi ile sunulmasi. 
+
+
+```
+app.use(express.static('public'))
+```
+
+bu komutu girdikten sonra, projemizde public isminde klasor olusturuyoruz ve ardindna css klasoru icerisine style.css dosyasini ekliyoruz.  Projde ki dosya organizasyonu acisindan daha duzenli hale getiriliyor. 
