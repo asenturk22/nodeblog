@@ -88,6 +88,8 @@ bu komutu girdikten sonra, projemizde public isminde klasor olusturuyoruz ve ard
 
 ### express-handlebars  templates 
 
+//aciklama eklenecek
+
 ```
 $ npm install express-handlebars
 ```
