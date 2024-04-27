@@ -8,6 +8,9 @@ const app = express()
 const hostname = "127.0.0.1"
 const port = 3000
 
+mongoose.connect('mongodb://127.0.0.1:27017/nodeblog_db')
+  .then(() => console.log('Connected!'));
+
 // View engine setup 
 app.set('view engine', 'handlebars')
 app.engine('handlebars', handlebars.engine())

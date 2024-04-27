@@ -111,3 +111,12 @@ app.get('/', (req, res) => {
 
 app.listen(3000);
 ```
+
+
+### mongoose download 
+
+MongoDB NoSql veritabani ile haberlesebilmesi icin "mongoose" paketinin npm paket yukleyicisi ile yuklanmesi. 
+
+```
+$ npm install mongoose
+```
