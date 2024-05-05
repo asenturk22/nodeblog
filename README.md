@@ -128,3 +128,11 @@ $ npm install mongoose
 $ npm install body-parser
 ```
 
+
+
+### express-fileupload Installation
+
+```
+$ npm i express-fileupload
+```
+
