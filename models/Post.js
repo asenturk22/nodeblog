@@ -1,7 +1,6 @@
 // Using Node.js `require()`
 const mongoose = require('mongoose')
 
-
 const PostSchema = new mongoose.Schema({
     title: {type: String, require:true}, 
     content: {type: String, require: true},

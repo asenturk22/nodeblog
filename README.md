@@ -120,3 +120,11 @@ MongoDB NoSql veritabani ile haberlesebilmesi icin "mongoose" paketinin npm pake
 ```
 $ npm install mongoose
 ```
+
+
+### body-parser download
+
+```
+$ npm install body-parser
+```
+

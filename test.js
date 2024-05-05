@@ -10,7 +10,7 @@ let flagFilePath = './postCreated.flag';
 mongoose.connect('mongodb://127.0.0.1:27017/nodeblog_test_db')
     .then( () => {
         console.log('Connected to mongoDB!')
-        // return createPost()
+        return createPost()
     })
 
 

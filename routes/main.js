@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const Post = require('../models/Post')
 
 
 router.get('/', (req, res) => {
@@ -16,7 +17,16 @@ router.get('/posts/new', (req, res) => {
 })
 
 router.get('/blog', (req, res) => {
-    res.render('site/blog');
+    Post.find({})
+        .then(posts => {
+            console.log(posts)
+            res.render('site/blog', {
+                    posts:posts
+                })
+        })
+        .catch(err => console.error('Connection error:', err))
+
+
 })
 
 router.get('/contact', (req, res) => {
@@ -29,10 +39,6 @@ router.get('/login', (req, res) => {
 
 router.get('/register', (req, res) => {
     res.render('site/register');
-})
-
-router.post('/posts/test', (req, res) => {
-    res.send('TEST OK!');
 })
 
 
